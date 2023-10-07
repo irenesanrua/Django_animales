@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi blog animalesco</title>
+    </head>
+    <body>
+        <h1>Mi protectora</h1>
+        {% for protectora in protectora_mostrar%}
+        <article>
+            <h2><a href="">{{protectora.nombre}}</a></h2>
+            <p>{{protectora.descripcion|linebreaksbr}}</p>
+            <time>Fecha creación: {{protectora.fecha_creacion}}</time>
+        </article>
+        {% endfor%}
+        
+    </body>
+</html>

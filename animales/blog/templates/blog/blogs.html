@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mis blogs</title>
+    </head>
+    <body>
+        <h1>Blogs</h1>
+        {% for blog in blogs%}
+        <article>
+            <h2><a href="/{{blog|lower}}">{{blog}}</a></h2>
+        </article>
+        {% endfor%}
+        
+    </body>
+</html>

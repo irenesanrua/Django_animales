@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi blog animalesco</title>
+    </head>
+    <body>
+        <h1>ANIMALESCO</h1>
+        {% for animal in animal_mostrar%}
+        <article>
+            <h2><a href="">{{animal.nombre}}</a></h2>
+            <p>{{animal.tipo|linebreaksbr}}</p>
+            <p>{{animal.cuidador|linebreaksbr}}</p>
+        </article>
+        {% endfor%}
+        
+    </body>
+</html>

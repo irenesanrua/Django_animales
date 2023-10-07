@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi blog animalesco</title>
+    </head>
+    <body>
+        <h1>Colaboradores</h1>
+        {% for colaborador in colaborador_mostrar%}
+        <article>
+            <h2><a href="">{{colaborador.nombre}}</a></h2>
+            <p>{{colaborador.cargo|linebreaksbr}}</p>
+            <time>Fecha de entrada a la protectora: {{colaborador.fecha_entrada_protectora}}</time>
+        </article>
+        {% endfor%}
+        
+    </body>
+</html>
