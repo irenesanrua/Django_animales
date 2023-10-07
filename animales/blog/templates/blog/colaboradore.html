@@ -7,7 +7,7 @@
         <h1>Colaboradores</h1>
         {% for colaborador in colaborador_mostrar%}
         <article>
-            <h2><a href="">{{colaborador.nombre}}</a></h2>
+            <h2>{{colaborador.nombre}}</h2>
             <p>{{colaborador.cargo|linebreaksbr}}</p>
             <time>Fecha de entrada a la protectora: {{colaborador.fecha_entrada_protectora}}</time>
         </article>
